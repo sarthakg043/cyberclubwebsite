@@ -1,0 +1,62 @@
+
+#join_btn_box{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+}
+
+#join_btn{
+	position: relative;
+	width: 320px;
+	height: 120px;
+	transform-style: preserve-3d;
+	transform: perspective(500px) rotateY(-40deg);
+	transition: 2s;
+}
+
+#join_btn:hover{
+	transform: perspective(500px) rotateY(400deg);
+
+}
+
+#join_btn span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 48px;
+	letter-spacing: 2px;
+	color: #333;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	background: #fff;
+}
+
+#join_btn span:nth-child(1){
+	transform: translateZ(40px);
+	border: 12px solid #65cbf9;
+}
+#join_btn span:nth-child(2), #join_btn span:nth-child(3){
+	width: 80px;
+	height: 100%;
+	background: #0095d8;
+}
+#join_btn span:nth-child(2){
+	transform: rotateY(90deg) translateZ(280px);
+}
+#join_btn span:nth-child(3){
+	transform: rotateY(90deg) translateZ(-40px);
+}
+#join_btn span:nth-child(4){
+	transform: translateZ(-40px);
+	border-left: 12px solid #65cbf9;
+	border-right: 12px solid #65cbf9;
+}
